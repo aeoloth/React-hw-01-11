@@ -1,5 +1,8 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import "antd/dist/antd.css";
+import "./index.css";
 
 function App() {
   return (
@@ -18,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <ReactMarkdown rehypePlugins={[rehypeHighlight]}>{'# Your markdown here'}</ReactMarkdown>,
     </div>
   );
 }
